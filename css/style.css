@@ -152,7 +152,12 @@ body {
   .current {
       color: #404bbf;
      }
-     
+    .modal-menu-nav{
+     display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+    
 /* ==========MODAL-MOBILE-MENU========= */
 /* =============TABLET============= */
 @media screen and (min-width: 768px) {
