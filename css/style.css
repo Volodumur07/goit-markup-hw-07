@@ -36,13 +36,29 @@ body {
   background-color: #ffffff;
 }
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+ 
 }
+
 /* ===============Header============= */
-.page-header {
+/*=============== MOBILE_ FIRST======== */
+@media screen and (min-width: 428px) {
+  .container {
+   width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu-nav, .contact{
+    display: none;
+  }
+ }
+
+/* =============TABLET============= */
+
+
+/* .page-header {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -140,9 +156,9 @@ body {
 .mailtel:hover,
 .mailtel:active {
   color: #404bbf;
-}
+} */
 /* =================MAIN HERO============ */
-.hero {
+/* .hero {
   background-color: #2e2f42;
   padding: 188px 0;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -189,10 +205,10 @@ body {
   background: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
+} */
 
 /*================ SECTION SECOND============ */
-.section-second {
+/* .section-second {
   padding: 120px 0;
 }
 
@@ -239,9 +255,9 @@ body {
   order: 1;
   flex-grow: 0;
   width: 264px;
-}
+} */
 /* =========SECTION (Third section) What are we doing (Galery)====== */
-.section-galery {
+/* .section-galery {
   padding-bottom: 120px;
 }
 .title-section-galery {
@@ -258,10 +274,10 @@ body {
   display: flex;
 
   gap: 24px;
-}
+} */
 
 /* ========SECTION OUR TEAM ==========*/
-.section-team {
+/* .section-team {
   background-color: #f4f4fd;
   padding: 120px 0;
 }
@@ -341,10 +357,10 @@ body {
 }
 .social-list-icon {
   fill: #f4f4fd;
-}
+} */
 /* =======================CUSTOMERS================ */
-.section-customers {
-  /* padding: 120px 156px 120px 156px; */
+/* .section-customers {
+ 
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -388,9 +404,9 @@ body {
 
 .icon-customers {
   fill: currentColor;
-}
+} */
 /*========== FOOTER ==========*/
-.footer {
+/* .footer {
   background-color: #2e2f42;
   padding: 100px 100px;
   margin: auto;
@@ -454,9 +470,9 @@ body {
 }
 .social-icon-footer {
   fill: #f4f4fd;
-}
+} */
 /* ====================FOOTER-FORM========= */
-.contaner-footer-form{
+/* .contaner-footer-form{
   margin-left: 80px;
 }
 .footer-form-text{
@@ -531,9 +547,9 @@ body {
   width: 20px;
   height: 24px;
   margin-left: 16px;
-}
+} */
 /* =====================BACKDROP===================================== */
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -591,9 +607,9 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
+} */
 /* ================FROM-INPUT===================== */
-.contact-form-text{
+/* .contact-form-text{
   font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -762,10 +778,10 @@ border-radius: 4px;
 
 .contac-form-checkbox-link{
   color: #4D5AE5;
-}
+} */
 /*=============== PAGE PORTFOLIO==================== */
 /* =====SECTION BUTTON===== */
-.services-section {
+/* .services-section {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -810,10 +826,10 @@ border-radius: 4px;
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 /* =======SECTION GALERY====== */
 
-.menu-galery {
+/* .menu-galery {
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
@@ -882,4 +898,4 @@ border-radius: 4px;
   flex: none;
   order: 1;
   flex-grow: 0;
-}
+} */
