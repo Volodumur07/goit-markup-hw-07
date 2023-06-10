@@ -40,7 +40,7 @@ body {
   padding-left: 16px;
   padding-right: 16px;
 }
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 468px) {
   .container {
     width: 428px;
     margin-left: auto;
@@ -70,6 +70,9 @@ body {
 }
 
 .page-header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -141,8 +144,7 @@ body {
   width: 24px;
   height: 24px;
   background: #e7e9fc;
-  opacity: 0.1;
-  border: 1px solid #2e2f42;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   padding: 0;
 }
@@ -218,6 +220,10 @@ body {
 /* ==========MODAL-MOBILE-MENU========= */
 /* =============TABLET============= */
 @media screen and (min-width: 768px) {
+  .page-header {
+    max-height: 72px;
+    display: flex;
+  }
   .btn-menu-hamburger {
     display: none;
   }
@@ -239,62 +245,66 @@ body {
   .contact {
     display: block;
   }
-  .list-item {
-    position: relative;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    transition: color var(--transition-duration-and-func);
-  }
-  .current {
-    color: #404bbf;
-  }
-
-  .current::after {
-    display: block;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    top: 50px;
-    content: '';
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background: #404bbf;
-  }
-
-  .list-item:focus,
-  .list-item:hover,
-  .list-item:active {
-    color: #404bbf;
-  }
-  .contact {
-    font-style: normal;
-    margin-left: auto;
-  }
-  .mailtel {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: #434455;
-    margin-left: auto;
-    transition: color var(--transition-duration-and-func);
-  }
-
-  .mailtel:focus,
-  .mailtel:hover,
-  .mailtel:active {
-    color: #404bbf;
+  .contact-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
   }
 }
+.list-item {
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  transition: color var(--transition-duration-and-func);
+}
+.current {
+  color: #404bbf;
+}
+
+.current::after {
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  top: 43px;
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #404bbf;
+}
+
+.list-item:focus,
+.list-item:hover,
+.list-item:active {
+  color: #404bbf;
+}
+.contact {
+  font-style: normal;
+  margin-left: auto;
+}
+.mailtel {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin-left: auto;
+  transition: color var(--transition-duration-and-func);
+}
+
+.mailtel:focus,
+.mailtel:hover,
+.mailtel:active {
+  color: #404bbf;
+}
+
 /* =============TABLET============= */
 /* ============DESCTOP================= */
 @media screen and (min-width: 1158px) {
   .page-header {
-    padding-left: 156px;
-    padding-right: 156px;
   }
   .current::after {
     top: 44px;
@@ -308,6 +318,7 @@ body {
   }
   .contact-menu {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 40px;
@@ -318,10 +329,10 @@ body {
 /* =================MAIN HERO============ */
 .hero {
   background: rgba(46, 47, 66, 0.7);
-  padding: 112px 54px;
+  padding: 112px 0;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/Dark-bg\ .jpg);
-  width: 428px;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -376,10 +387,10 @@ body {
 /* =============TABLET============= */
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 112px 136px;
+    padding: 112px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/Dark-bg-tablet.jpg);
-    width: 768px;
+    /* width: 768px; */
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -403,10 +414,10 @@ body {
 /* =============DESCTOP============= */
 @media screen and (min-width: 1158px) {
   .hero {
-    padding: 188px 472px;
+    padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/people-office-desctop\ .jpg);
-    width: 1440px;
+    /* width: 1440px; */
   }
   .main-title {
     font-weight: 700;
@@ -461,7 +472,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  width: 396px;
 }
 /* =============TABLET============= */
 @media screen and (min-width: 768px) {
@@ -483,7 +493,7 @@ body {
 /* =============DESCTOP============= */
 @media screen and (min-width: 1158px) {
   .section-second {
-    padding: 120px 156px;
+    padding: 120px 0;
   }
 
   .tittle-section-second {
@@ -544,7 +554,7 @@ body {
 @media screen and (min-width: 1158px) {
   .section-galery {
     display: block;
-    padding: 120px 156px;
+    padding-bottom: 120px;
   }
   .title-section-galery {
     font-weight: 700;
@@ -921,7 +931,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     column-gap: 24px;
-    max-width: 552px;
+    max-width: 584px;
   }
   .container-logo-footer {
     align-items: flex-start;
@@ -973,7 +983,7 @@ body {
 /* ====================FOOTER-FORM========= */
 
 /* =====================BACKDROP===================================== */
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 320px) {
   .backdrop {
     position: fixed;
     top: 0;
@@ -1000,6 +1010,7 @@ body {
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: scroll;
   }
   .modal-close-btn {
     position: absolute;
