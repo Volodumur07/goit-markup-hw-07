@@ -110,6 +110,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 40px;
   }
 }
 .btn-menu-hamburger {
@@ -217,6 +218,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 .modal-menu-item-social-icon {
   width: 40px;
@@ -1276,7 +1278,9 @@ body {
 }
 @media screen and (min-width: 1158px) {
   .modal {
-    top: 38%;
+    top: 10px;
+    min-height: auto;
+    overflow: unset;
   }
 }
 /*=============== PAGE PORTFOLIO==================== */
