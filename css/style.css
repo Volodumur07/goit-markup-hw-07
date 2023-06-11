@@ -1264,7 +1264,7 @@ body {
   .modal {
     width: 95%;
     max-width: 392px;
-    height: 95%;
+    /* height: 95%; */
     min-height: 584px;
     overflow: scroll;
   }
