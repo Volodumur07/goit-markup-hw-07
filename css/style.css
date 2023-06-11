@@ -990,6 +990,7 @@ body {
   .footer-form {
     flex-direction: row;
     column-gap: 24px;
+    width: auto;
   }
   .footer-form-input {
     width: 264px;
