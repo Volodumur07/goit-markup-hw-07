@@ -1281,7 +1281,9 @@ body {
 }
 @media screen and (min-width: 1158px) {
   .modal {
-    top: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     min-height: auto;
     overflow: unset;
   }
