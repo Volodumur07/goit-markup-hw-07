@@ -1264,7 +1264,7 @@ body {
     width: 95%;
     max-width: 392px;
     height: 95%;
-    max-height: 586px;
+    min-height: 584px;
     overflow: scroll;
   }
 }
