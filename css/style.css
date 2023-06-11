@@ -875,6 +875,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 .footer-form-text {
   font-weight: 500;
@@ -890,6 +891,10 @@ body {
   align-items: center;
   justify-content: center;
   row-gap: 16px;
+  width: 100%;
+}
+.footer-form-field-wrapper {
+  width: 100%;
 }
 .footer-form-input {
   width: 398px;
