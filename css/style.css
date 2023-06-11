@@ -146,9 +146,7 @@ body {
 .modal-menu-top {
   margin-bottom: 40px;
 }
-.modal-menu-bottom {
-  margin-bottom: 40px;
-}
+
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
