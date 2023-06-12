@@ -1266,7 +1266,7 @@ body {
     max-width: 392px;
     /* height: 95%; */
     min-height: 584px;
-    overflow: scroll;
+    /* overflow: scroll; */
   }
 }
 @media screen and (min-width: 468px) {
